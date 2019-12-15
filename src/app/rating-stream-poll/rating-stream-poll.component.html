@@ -1,0 +1,24 @@
+<div class="flex-container">
+  <div class="flex-content">
+    <div class="flex-left">
+      <div class="flex-header">
+        <h1 style="color:#565859">Feedback</h1>
+      </div>
+      <app-rating-view
+        *ngFor="let rating of ratings"
+        [rating]="rating">
+      </app-rating-view>
+    </div>
+    <div class="flex-right">
+      <div class="flex-header">
+        <h1 style="color:white">Scan URL.</h1>
+      </div>
+      <div class="qrcode">
+        <qr-code [value]="qrData" [size]="254"></qr-code>
+      </div>
+      <div class="flex-footer">
+        <p style="color:white"><b>REWE</b> digital</p>
+      </div>
+    </div>
+  </div>
+</div>
