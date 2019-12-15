@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ratings-frontend": {
+    "softuni-ratings-frontend": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ratings-frontend",
+            "outputPath": "dist/softuni-ratings-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ratings-frontend:build"
+            "browserTarget": "softuni-ratings-frontend:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ratings-frontend:build:production"
+              "browserTarget": "softuni-ratings-frontend:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ratings-frontend:build"
+            "browserTarget": "softuni-ratings-frontend:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ratings-frontend:serve"
+            "devServerTarget": "softuni-ratings-frontend:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ratings-frontend:serve:production"
+              "devServerTarget": "softuni-ratings-frontend:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "ratings-frontend"
+  "defaultProject": "softuni-ratings-frontend"
 }
